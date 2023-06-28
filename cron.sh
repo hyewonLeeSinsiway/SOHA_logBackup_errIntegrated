@@ -195,6 +195,8 @@ set_cron_schedule() {
                 minute=${time[1]}
             fi
             day=${2:-"L"}
+        else 
+            day="L"
         fi
 
         if [ "$(date_format_check $minute $hour $day $month $day_week)" != "0" ]; then

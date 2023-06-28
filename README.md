@@ -46,6 +46,7 @@ SOHA system log: backup &amp; error part integraged bash shell script
 
 ### 사용법
 다른 스크립트에서 선언하여 사용합니다.
+
 ```source ./backup_dir_create.sh```
 
 

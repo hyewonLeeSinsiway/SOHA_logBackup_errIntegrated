@@ -26,23 +26,26 @@ SOHA system log: backup &amp; error part integraged bash shell script
 ![image](https://github.com/hyewonLeeSinsiway/SOHA_logBackup_errIntegrated/assets/62870767/cd3b05eb-d8a5-4a0f-aaaa-e4c7b5aabbf0)
 
 ## 0. backup_dir_create
-해당 스크립트는 프로그램을 어느 방향으로 사용하시든간에 반드시 필요합니다. 
+해당 스크립트는 프로그램을 어느 방향으로 사용하시든간에 반드시 필요합니다. (모든 스크립트에서 해당 파일을 호출합니다.)
 
 사용하려는 스크립트와 동일한 경로에 위치시킵니다. 
 
-
-
 ### 함수 목록
 1. check_disk_space()
-- 서버 디스크 용량을 확인합니다.
+- 서버 디스크 용량을 확인합니다. 80% 이상 찼을 경우 동작을 중지합니다.
 2. create_backup_dir()
+- $SOHA_HOME/$SOHA_SVC/log/backup 디렉토리를 생성합니다.
 
 ### 사용법
-
+```다른 스크립트에서 선언하여 사용합니다.
+```source ./backup_dir_create.sh
 
 
 ## 1. logs_backup
+SOHA 시스템 로그 초기화 및 압축/백업합니다.
 
+### 함수 목록
+### 사용법
 
 
 ## 2. error_integrated
